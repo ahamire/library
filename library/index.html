@@ -16,22 +16,34 @@
     </div>
     <main>
         <div class="addMenu">
+            <button class="hide">hide</button>
+            <form action="" method="dialog">
             <div class="block">
-                <a>Add book</a>
-                <a>Name of book</a>
-                <a>Author</a>
-                <a>Pages</a>
+                <div class="mm1">
+                    <label for="id-book">Name of book</label>
+                    <input type="text" id="id-book" >
+                </div>
+                <div class="mm2">
+                    <label>description</label>
+                    <textarea maxlength="256" style="height: 50px;" class="textarea" ></textarea>
+                </div>
+                
+                <div class="mm3">
+                    <label>Author</label>
+                    <input type="text" id="id-author" >
+                </div>
+                
+                <div class="mm4">
+                    <label>Pages</label>
+                    <input type="number" min="1"  placeholder="number of pages" id="id-pages" >
+                </div>
+                <button class="btn_add">add</button>
             </div>
-            <button>add</button>
+            
+        </form>
         </div>
-        <div class="main">
-            <div class="card">
-                <a>jkla</a>
-                <a>lkaalkj</a>
-                <a>kllka</a>
-                <button>read</button>
-                <button>remove</button>
-            </div>
+        <div class="main" id="addS">
+            
         </div>
     </main>
     <script src="script.js"></script>
